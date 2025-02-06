@@ -17,6 +17,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+div#xbox {
+    margin-top: 50px;
+}
+
 div#xbox img {
     width: 70px;
     display: block;
@@ -29,6 +33,10 @@ div#xbox h1 {
     font-size: 20px;
 }
 
+div#topo {
+    margin-top: -50px;
+}
+
 div#login {
     background-color: var(--color004);
     color: white;
@@ -36,7 +44,8 @@ div#login {
     border-radius: 15px;
     padding: 80px;
     text-align: center;
-    width: 500px;
+    width: 20%;
+    min-width: 250px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,28 +55,51 @@ div#login {
 div#login form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
-div#login form p {
+div#login input.login2 {
+    border: none;
+    background-color: var(--color005);
+    padding: 18px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.267);
+    outline: none;
+    transition-duration: .3s;
+    border: 2px solid transparent;
+}
+
+div#login input.login2:focus {
+    border: 2px solid var(--color001);
+    box-shadow: 0px 0px 10px var(--color001);
+    border-radius: 5px;
+}
+
+div#login label.info {
     text-align: left;
     margin: 0px;
 }
 
-div#login form a {
-    text-align: left;
-    text-decoration: none;
-    color: white;
+div.info2 {
     font-size: 15px;
-    background-color: var();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-div#login form a:hover {
+div.info2 a {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+div.info2 a:hover {
     text-decoration: underline;
 }
 
 div#login button {
     padding: 20px;
+    transition-duration: .3s;
 }
 
 div#login button.ent {
@@ -80,4 +112,16 @@ div#login button.reg {
     color: white;
     border: 2px solid var(--color001);
     background-color: #2E2E2E;
+}
+
+div#login button.ent:hover {
+    box-shadow: 0px 0px 10px var(--color001);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div#login button.reg:hover {
+    box-shadow: 0px 0px 10px var(--color001);
+    border-radius: 5px;
+    cursor: pointer;
 }

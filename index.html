@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xbox</title>
+    <title>Xbox | Jump in.</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
@@ -17,14 +17,18 @@
     <div id="login">
         <div id="topo">
             <h1>Login</h1>
-            <p>Faça seu Login ou Registre-se</p>
         </div>
         <form action="login2.html">
-            <p>Nome de usuário</p>
-            <input type="text" name="" id="" required>
-            <p>Senha</p>
-            <input type="password" name="" id="" required>
-            <a href="#">Esqueceu a senha?</a>
+            <label for="user" class="info" id="user">Nome de usuário ou E-mail</label>
+            <input class="login2" type="text" name="user" id="user" required>
+            <label for="senha" class="info" id="senha">Senha</label>
+            <input class="login2" type="password" name="senha" id="senha" required>
+            <div class="info2">
+                <label class="lembrar">
+                    <input type="checkbox" name="lembrar" id="">Lembrar-me
+                </label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
             <button class="ent">Entrar</button>
             <button class="reg">Registre-se</button>
         </form>
