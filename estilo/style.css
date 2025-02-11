@@ -62,7 +62,7 @@ div#login input.login2 {
     border: none;
     background-color: var(--color005);
     padding: 18px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.267);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
     outline: none;
     transition-duration: .3s;
     border: 2px solid transparent;
